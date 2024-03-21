@@ -16,6 +16,7 @@
             "outputPath": "dist/tailwind22",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "aot":true,
             "polyfills": [
               "zone.js"
             ],
@@ -25,9 +26,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/animate.css/animate.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ "node_modules/preline/preline.js"]
           },
           "configurations": {
             "production": {
@@ -86,10 +88,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/preline/preline.js"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2803a540-36a5-4398-8d18-f13591d6154b"
   }
 }
